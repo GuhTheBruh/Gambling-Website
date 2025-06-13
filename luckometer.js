@@ -1,4 +1,6 @@
-let luckValue = 0;
+let luckValue = localStorage.getItem("luckValue")
+  ? parseInt(localStorage.getItem("luckValue"))
+  : 0;
 //this is how luckValue is stored accross all the html files
 
 localStorage.setItem("luckValue", luckValue); //store the item
