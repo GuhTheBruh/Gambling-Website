@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="theStyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlackJack</title>
+    <script src="luckometer.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script src="blackJackCode.js" defer></script>
+  </head>
+
+  <body>
+    <div id = "gameBase">
+      <a id="homeLink" href="index.html">HOME</a>
+      <h1>
+        BLACKJACK!!!<br /></h1>
+        <input type="range" id="theLuckometer" min="-100" max="100" disabled />
+        <br/>
+        <div id="luckoMeter-info">This tool measures your current luck</div>
+      <div id="thehands">
+        <div id="yourHand">--</div>
+        <div id="botHand">--</div>
+      </div>
+      <div id="theCards">
+        <div id="yourCards">Your Hand: </div>
+        <div id="aiCards"> :Bot Hand</div>
+      </div>
+      <div id = "theButtons">
+        <button id="hit">HIT</button>
+        <button id="stand">STAND</button>
+      </div>
+
+      <div id = "winBoard" style="display: none;">
+        <div id = "winType"></div>
+        <div id = "winValue"></div>
+        <a id = "nextGame" disabled href="slotMachine.html">Next Game</a>
+      </div>
+    </div>
+  </body>
+</html>

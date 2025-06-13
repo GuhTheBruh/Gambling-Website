@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="theStyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Should you gamble</title>
+    <script src="luckometer.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <main>
+      <div id="gameBase">
+        <h1>SHOULD YOU GO GAMBLING RIGHT NOW?<br /></h1>
+        <div id="introduction">Welcome! this is a test designed to calculate your luck for the near future by playing a series of probability based games. Your luck will be measured using the tool below, known as
+          <div id ="introLuckometer"> The Luckometer</div>
+        </div>
+
+          <input type="range" id="theLuckometer" min="-100" max="100" disabled /><br>
+          <div id="luckoMeter-info"></div>
+        
+          <div id ="desireDiv">
+
+            <div id = "desireTitle"> Type something that you want to gamble for(optional)</div>
+            <div id= "desireText">In the near future, I hope I get
+              <input
+              type="letter"
+              id="desireInput"
+              placeholder="Something you want"
+              maxlength="50"
+            />
+          </div>
+          <a id = "startGame" href="roulette.html">Begin Test</a>
+          </div>
+      </div>
+    </main>
+  </body>
+</html>

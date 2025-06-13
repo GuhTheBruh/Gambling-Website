@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Spin Wheel Example - IIFE</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="icon" href="data:image/x-icon;," type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/spin-wheel@5.0.2/dist/spin-wheel-iife.js"></script>
+
+    <img src="rouletteWheelbase.png" id="base" hidden />
+    <script src="theWheel.js" defer></script>
+  </head>
+
+  <body>
+    <div class="gui-wrapper"></div>
+    <form id="colorForm">
+      <div class="wheel-wrapper"></div>
+      <div id="chosenBet">
+        <input type="radio" id="colorRed" name="colorChosen" value="100" />
+        <label for="colorRed">RED</label><br />
+        <input type="radio" id="colorBlack" name="colorChosen" value="200" />
+        <label for="colorBlack">BLACK</label><br />
+        <input type="radio" id="colorGreen" name="colorChosen" value="300" />
+        <label for="colorGreen">GREEN</label><br />
+        <input type="radio" id="straight" name="colorChosen" value="0" />
+        <label for="straight">Number (0-39)</label><br />
+        <input
+          type="number"
+          id="numberInput"
+          min="0"
+          max="39"
+          step="1"
+          placeholder="Enter number (0-39)"
+        />
+      </div>
+      <div id="placeHolder">Result:</div>
+    </form>
+    <br />
+    <button id="theButton">spin</button>
+  </body>
+</html>

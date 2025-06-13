@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="theStyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slot Machine</title>
+    <script src="luckometer.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script src="slotCode.js" defer></script>
+  </head>
+
+  <body>
+    <div id = "gameBase">
+      <a id="homeLink" href="index.html">HOME</a>
+      <h1>
+        SLOTS!!!<br /></h1>
+        <input type="range" id="theLuckometer" min="-100" max="100" disabled /><br>
+        <div id="luckoMeter-info">This tool measures your current luck</div>
+      <div id="slotMachine">
+          <div id="num1">
+            <div class="slot-inner">
+              <div>0</div>
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div>10</div>
+              <div>11</div>
+              <div>0</div>
+            </div>
+          </div>
+          <div id="num2">
+            <div class="slot-inner">
+              <div>0</div>
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div>10</div>
+              <div>11</div>
+              <div>0</div>
+            </div>
+          </div>
+          <div id="num3">
+            <div class="slot-inner">
+              <div>0</div>
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div>10</div>
+              <div>11</div>
+              <div>0</div>
+            </div>
+          </div>
+        </div>
+        <div id="buttonContainer">
+          <button id="spin2">STOP</button>
+        </div>
+      <!-- <button id="refresh">Refresh</button> -->
+      <div id = "winBoard" style="display: none;">
+        <div id="winType"></div>
+        <div id = "winValue"></div>
+        <a id = "nextGame" disabled href="verdict.html">Finish</a>
+      </div>
+    </div>
+  </body>
+</html>
