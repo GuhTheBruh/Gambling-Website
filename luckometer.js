@@ -1,7 +1,9 @@
 let luckValue = localStorage.getItem("luckValue")
   ? parseInt(localStorage.getItem("luckValue"))
   : 0;
-//this is how luckValue is stored accross all the html files
+
+// Clamp luckValue between -100 and 100
+luckValue = Math.max(-100, Math.min(100, luckValue));
 
 localStorage.setItem("luckValue", luckValue); //store the item
 
