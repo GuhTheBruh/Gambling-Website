@@ -1,8 +1,6 @@
-let luckValue = localStorage.getItem("luckValue")
-  ? parseInt(localStorage.getItem("luckValue"))
-  : 0;
+let luckValue = 0;
 //this is how luckValue is stored accross all the html files
-luckValue = Math.max(-100, Math.min(100, luckValue));
+
 localStorage.setItem("luckValue", luckValue); //store the item
 
 let luckometer = document.getElementById("theLuckometer");
